@@ -1,0 +1,6 @@
+{% if site.data.nav %}<nav id="nav" aria-label="Main nav"><ul>{% for nav in site.data.nav %}
+	<li><a href="{{ nav['path'] }}">
+		<span class="icon">{{ nav['icon'] }}</span>
+		<span class="text">{{ nav['name'] }}</span>
+	</a></li>
+{% endfor %}</ul></nav>{% endif %}

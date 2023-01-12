@@ -1,0 +1,20 @@
+lang: ko
+
+title: "kimzuni"
+description: ""
+url: "https://kimzuni.com"
+baseurl: ""
+
+email: "hello@kimzuni.com"
+github: kimzuni
+
+cdn: "https://cdn.jsdelivr.net/gh/kimzuni/cdn/"
+favicons: "https://cdn.jsdelivr.net/gh/kimzuni/logo@latest/favicons"
+
+
+
+
+
+sass:
+  style: compressed
+  sourcemap: never
