@@ -15,3 +15,22 @@ window.addEventListener("DOMContentLoaded", function() {
 		resize_header();
 	});
 });
+
+
+
+/*
+window.addEventListener("load", function() {
+	for (let a of html.querySelectorAll("a[href^='#']")) {
+		a.addEventListener("click", function(e) {
+			e.preventDefault();
+			let pos = html.querySelector(`[id="${this.getAttribute("href").slice(1)}"]`).getBoundingClientRect();
+			let xpos = pos.left + html.scrollLeft;
+			let ypos = pos.top + html.scrollTop;
+			window.scrollTo({
+				top: ypos - to_px(get_style("--header-height")),
+				left: xpos - to_px(get_style("--nav-width"))
+			});
+		});
+	}
+});
+*/

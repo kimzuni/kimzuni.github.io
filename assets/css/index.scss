@@ -38,11 +38,19 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+} button, input {
+	color: var(--color);
+} textarea.copyarea {
+	height: 0;
+	width: 0;
+	overflow: hidden;
 } ul, ol {
 	list-style: none;
 } img, svg {
 	max-height: 100%;
 	max-width: 100%;
+	height: auto;
+	width: auto;
 } svg {
 	transition: fill .1s, stroke .1s;
 }
@@ -110,6 +118,7 @@ a {
 #sites-nav {
 	background-color: var(--bg-color);
 	border-right: 1px solid var(--bd-color);
+	box-sizing: content-box;
 	display: none;
 	position: fixed;
 	top: 0;
@@ -136,6 +145,17 @@ a {
 		align-items: center;
 		height: 100%;
 		width: var(--nav-maxWidth);
+
+		&[select]:before {
+			content: "";
+			display: inline;
+			border-left: 1px solid var(--theme-color);
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 0px;
+		}
 	} .icon {
 		display: flex;
 		justify-content: center;
@@ -186,7 +206,6 @@ a {
 	right: var(--gap);
 	height: 2em;
 	width: 2em;
-	color: var(--color);
 	font-size: 1.25rem;
 	cursor: pointer;
 }

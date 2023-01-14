@@ -27,9 +27,28 @@ const get_param = function(k) {
 
 
 
+const text_copy = function(text) {
+	let copyarea = document.createElement("textarea");
+	try {
+		html.append(copyarea);
+		copyarea.className = "copyarea";
+		copyarea.value = text;
+		copyarea.select();
+		document.execCommand("copy");
+		f_msgbox("Copy Successul!", "success");
+	} catch (err) {
+		f_msgbox("Error!", "error");
+	}
+	copyarea.remove();
+}
+
+
+
+
 
 const baseurl = "{{ site.baseurl }}";
-const paginate_path = "{{ site.paginate_path }}";
+const paginate = "{{ site.pagination.per_page }}";
+const paginate_path = "{{ site.pagination.permalink }}";
 
 const theme_color = get_style("--theme-color");
 const theme_color_light = get_style("--theme-color-light");

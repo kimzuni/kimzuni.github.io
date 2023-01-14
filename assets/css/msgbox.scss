@@ -2,9 +2,9 @@
 ---
 
 #msgbox-container {
-	--msgbox-marginTop: var(--gap);
-	--msgbox-paddingTop: var(--gap-2);
-	--msgbox-lineHeight: 1.2em;
+	--marginTop: var(--gap);
+	--paddingTop: var(--gap-2);
+	--lineHeight: 1.2em;
 
 	display: flex;
 	flex-direction: column;
@@ -19,7 +19,7 @@
 	.msgbox {
 		display: flex;
 		align-items: flex-end;
-		margin-top: calc(var(--msgbox-lineHeight) + var(--msgbox-paddingTop) * -2);
+		margin-top: calc(var(--lineHeight) + var(--paddingTop) * -2);
 		height: 0;
 		opacity: 1;
 		transition-property: margin, height, opacity;
@@ -27,7 +27,7 @@
 		transition-timing-function: ease-in-out;
 
 		&.show {
-			margin-top: var(--msgbox-marginTop);
+			margin-top: var(--marginTop);
 			height: 3em;
 		} &.hide {
 			margin-top: 0;
@@ -44,8 +44,8 @@
 			min-width: 10em;
 			max-width: var(--width);
 			border-radius: var(--gap-2);
-			padding: var(--msgbox-paddingTop) var(--gap);
-			line-height: var(--msgbox-lineHeight);
+			padding: var(--paddingTop) var(--gap);
+			line-height: var(--lineHeight);
 			text-align: center;
 
 			&.success {

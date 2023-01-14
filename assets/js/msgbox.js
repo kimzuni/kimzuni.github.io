@@ -21,7 +21,7 @@ const f_msgbox = function(type, msg) {
 		setTimeout(msg_hide, 3000);
 	} else if (type == "error") {
 		setTimeout(msg_hide, 4000);
-	} else { /* normal, success, etc. */
+	} else {
 		setTimeout(msg_hide, 2000);
 	}
 }
