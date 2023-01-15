@@ -31,6 +31,7 @@ a {
 
 	&:hover {
 		--color: var(--theme-color);
+		--svg-draw-color: var(--theme-color);
 	}
 } del, s {
 	color: var(--sub-color);
