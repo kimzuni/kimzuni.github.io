@@ -1,6 +1,9 @@
 {% if site.data.sites-nav %}<nav id="sites-nav" aria-label="My Sites"><ul>{% for nav in site.data.sites-nav %}
-	<li><a href="{{ nav['url'] }}" target="_blank" tabindex="-1"{% assign check_1 = site.url | split: '//' | slice: 1 %}{% assign check_2 = nav['url'] | split: '//' | slice: 1 %}{% if check_1 == check_2 %} select{% endif %}>
+	<li><a{% assign check_1 = site.url | split: '//' | slice: 1 %}{% assign check_2 = nav['url'] | split: '//' | slice: 1 %}{% if check_1 == check_2 %} select{% else %} href="{{ nav['url'] }}" target="_blank" tabindex="-1"{% endif %}>
 		<span class="icon">{% if nav['icon'] %}{% include svg/{{ nav.icon }}.html %}{% else %}{{ nav['name'] | slice: 0 }}{% endif %}</span>
 		<span class="text">{{ nav['name'] }}</span>
 	</a></li>
-{% endfor %}</ul><script type="text/javascript" src="{{ site.favicons }}/svg-draw.js"></script></nav>{% endif %}
+{% endfor %}</ul>
+<script type="text/javascript" src="{{ site.favicons }}/svg-draw.js"></script>
+<script type="text/javascript" src="{{ site.favicons }}/../logos/svg-draw-blog.js"></script>
+</nav>{% endif %}

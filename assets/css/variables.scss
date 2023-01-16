@@ -22,24 +22,26 @@
 
 
 :root {
-	--color: #333;
-	--bg-color: #fff;
-	--bd-color: #ccc;
-
-	--sub-color: #777;
-	--sub-bg-color: #eee;
-
-	--github-color: #24292f;
-	--notion-color: #fff;
-/* } @media (prefers-color-scheme: dark) { */
-} :root[darkmode="true"] {
 	--color: #ddd;
 	--bg-color: #232323;
 	--bd-color: #444;
 
+	--sub-color: #777;
 	--sub-bg-color: #333;
 
 	--github-color: #fff;
+	--notion-color: #fff;
+
+} @media (prefers-color-scheme: light) {
+	:root {
+		--color: #333;
+		--bg-color: #fff;
+		--bd-color: #ccc;
+
+		--sub-bg-color: #eee;
+
+		--github-color: #24292f;
+	}
 }
 
 

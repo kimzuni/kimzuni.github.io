@@ -146,6 +146,7 @@ a {
 		align-items: center;
 		height: 100%;
 		width: var(--nav-maxWidth);
+		cursor: pointer;
 
 		&[select]:before {
 			content: "";
