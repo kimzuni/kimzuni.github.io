@@ -8,6 +8,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 	{% include google-analytics.html %}
+	{% include google-tag-manager-head.html %}
 	{% include favicons.html %}
 	<title>{% if page.title and page.title != "Home" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 	{% seo title=false %}
@@ -20,6 +21,7 @@
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/index.js"></script>
 </head>
 <body>
+	{% include google-tag-manager-body.html %}
 	{% include msgbox.html %}
 	{% include header.html %}
 	{% include sites-nav.html %}
