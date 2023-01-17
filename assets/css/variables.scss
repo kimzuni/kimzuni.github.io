@@ -51,8 +51,8 @@
 	--lineHeight: 1.4em;
 
 	--header-height: 3rem;
-	--nav-height: 3rem;
-	--nav-width: 3rem;
+	--nav-height: var(--header-height);
+	--nav-width: var(--header-height);
 	--nav-maxWidth: 250px;
 	--sidebar-width: 250px;
 	--footer-height: 5rem;
