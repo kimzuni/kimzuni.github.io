@@ -45,8 +45,6 @@ a {
 	height: 0;
 	width: 0;
 	overflow: hidden;
-} ul, ol {
-	list-style: none;
 } img, svg {
 	max-height: 100%;
 	max-width: 100%;
@@ -66,7 +64,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0 var(--gap);
-	position: sticky;
+	position: static;
 	top: 0;
 	font-size: 1.15rem;
 	z-index: var(--header-zIndex);
@@ -101,6 +99,7 @@ a {
 		flex-wrap: nowrap;
 		height: 100%;
 		overflow: auto;
+		list-style: none;
 	} li {
 		flex: 1;
 	} a {
@@ -138,6 +137,7 @@ a {
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+		list-style: none;
 	} li {
 		position: relative;
 		height: var(--nav-width);
