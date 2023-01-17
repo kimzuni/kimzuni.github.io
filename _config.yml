@@ -15,9 +15,8 @@ favicons: "https://cdn.jsdelivr.net/gh/kimzuni/logo@latest/favicons"
 
 include: ['_pages']
 
-google:
-  analytics: G-GGDJ40KE4F
-  tag_manager: GTM-P4BCWN6
+google_analytics:
+  id: G-GGDJ40KE4F
 
 
 
