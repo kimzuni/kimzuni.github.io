@@ -7,3 +7,4 @@ theme:
 success: "green"
 warning: "orange"
 error: "red"
+danger: "red"

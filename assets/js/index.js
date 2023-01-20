@@ -1,18 +1,21 @@
-let header, siteTitle, nav, sitesNav;
+let main, header, siteTitle, nav, sitesNav;
 
-const resize_header = function() {
+const document_resize = function() {
 	header.clientHeight == siteTitle.clientHeight ? header.classList.remove("over") : header.classList.add("over");
+	if (main) { set_style(html, "--main-width", main.clientWidth + "px") }
+	
 }
 
 window.addEventListener("DOMContentLoaded", function() {
+	main = html.querySelector("#main");
 	header = html.querySelector("#header");
 	siteTitle = html.querySelector("#site-title");
 	nav = html.querySelector("#nav");
 	sitesNav = html.querySelector("#sites-nav");
 
-	resize_header();
+	document_resize();
 	window.addEventListener("resize", function() {
-		resize_header();
+		document_resize();
 	});
 });
 

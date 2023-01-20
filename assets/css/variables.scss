@@ -14,6 +14,7 @@
 	--success-color: {{ site.data.color["success"] }};
 	--warning-color: {{ site.data.color["warning"] }};
 	--error-color: {{ site.data.color["error"] }};
+	--danger-color: {{ site.data.color["danger"] }};
 
 	--shadow-color: var(--black);
 	--svg-draw-color: var(--color);
@@ -32,8 +33,15 @@
 	--github-color: #fff;
 	--notion-color: #fff;
 
-} @media (prefers-color-scheme: light) {
+
+
+	--btn-bg-color-selected: var(--theme-color-dark);
+} @media (prefers-color-scheme: dark) {
 	:root {
+		--btn-bg-color-selected: var(--theme-color);
+
+
+
 		--color: #333;
 		--bg-color: #fff;
 		--bd-color: #ccc;
@@ -52,9 +60,9 @@
 
 	--header-height: 3rem;
 	--nav-height: var(--header-height);
-	--nav-width: var(--header-height);
-	--nav-maxWidth: 250px;
-	--sidebar-width: 250px;
+	--nav-width: 0px;
+	--nav-maxWidth: 0px;
+	--sidebar-width: 0px;
 	--footer-height: 5rem;
 
 	--header-zIndex: 500;
@@ -71,6 +79,10 @@
 	--gap4: calc(var(--gap) * 4);
 } @media (min-width: 768px) {
 	:root {
+		--nav-width: var(--header-height);
+		--nav-maxWidth: 250px;
+		--sidebar-width: 250px;
+
 		--gap: 1rem;
 	}
 }

@@ -211,3 +211,15 @@ a {
 	font-size: 1.25rem;
 	cursor: pointer;
 }
+
+
+
+
+
+@media print {
+	body> *:not(#main),
+	#tail,
+	#sidebar,
+	#comment
+	{ display: none; }
+}
