@@ -2,7 +2,6 @@ let main, header, siteTitle, nav, sitesNav;
 
 const document_resize = function() {
 	header.clientHeight == siteTitle.clientHeight ? header.classList.remove("over") : header.classList.add("over");
-	if (main) { set_style(html, "--main-width", main.clientWidth + "px") }
 	
 }
 

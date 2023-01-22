@@ -3,6 +3,9 @@ permalink: /robots.txt
 ---
 
 User-agent: *
-Allow: /
+Disallow: /
+Allow: /$
+Allow: /assets/css/
+Allow: /assets/js/
 
 Sitemap: {{ site.url }}/sitemap.xml

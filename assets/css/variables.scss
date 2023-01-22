@@ -35,10 +35,10 @@
 
 
 
-	--btn-bg-color-selected: var(--theme-color-dark);
-} @media (prefers-color-scheme: dark) {
+	--btn-bg-color: var(--theme-color-dark);
+} @media (prefers-color-scheme: light) {
 	:root {
-		--btn-bg-color-selected: var(--theme-color);
+		--btn-bg-color: var(--theme-color);
 
 
 
