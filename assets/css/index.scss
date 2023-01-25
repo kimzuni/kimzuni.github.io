@@ -190,6 +190,8 @@ a {
 		padding: .5em 0;
 		text-align: center;
 	}
+} #main[sidebar="true"] ~ #footer {
+	padding-right: var(--sidebar-width);
 }
 
 
@@ -218,8 +220,17 @@ a {
 
 @media print {
 	body> *:not(#main),
-	#tail,
-	#sidebar,
-	#comment
-	{ display: none; }
+	#main> *:not(#main-content),
+	#main-content> *:not(#page),
+	.print-disabled {
+		display: none;
+	}
+
+	#main-content {
+		padding: 0 !important;
+	} div.highlighter-rouge {
+		page-break-inside: avoid;
+		page-inside: avoid;
+		page-break-after: auto;
+	}
 }

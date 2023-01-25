@@ -17,11 +17,8 @@ const f_msgbox = function(type, msg) {
 		}, 500);
 	}
 
-	if (type == "warning") {
-		setTimeout(msg_hide, 3000);
-	} else if (type == "error") {
-		setTimeout(msg_hide, 4000);
-	} else {
-		setTimeout(msg_hide, 2000);
-	}
+	let timeout = 2000;
+	if (type == "warning") { timeout = 3000; }
+	else if (type == "error") { timeout =  4000; }
+	setTimeout(msg_hide, timeout);
 }
