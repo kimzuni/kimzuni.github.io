@@ -10,11 +10,13 @@ email: "hello@kimzuni.com"
 github: kimzuni
 
 cdn: "https://cdn.jsdelivr.net/gh/kimzuni/cdn/"
-favicons: "https://cdn.jsdelivr.net/gh/kimzuni/logo@latest/favicons"
+logos: "https://cdn.jsdelivr.net/gh/kimzuni/logos@latest"
+favicons: "https://cdn.jsdelivr.net/gh/kimzuni/logos@latest/kimzuni/favicons"
 
 
 
-include: ['_pages']
+include:
+  - _pages
 
 google_analytics:
   id: G-GGDJ40KE4F
