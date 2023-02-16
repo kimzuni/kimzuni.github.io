@@ -8,3 +8,5 @@ Disallow: /404.html
 Disallow: /CNAME
 
 Sitemap: {{ site.url }}/sitemap.xml
+
+#DaumWebMasterTool:9b908bab8e3d20142c02f4fd0a01b3c3a4282856d2f4c3639933b26575faf78f:DNgBknCKePIIBnhCyG2TVg==
