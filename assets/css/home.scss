@@ -1,7 +1,10 @@
 ---
 ---
 
-body {
+:root {
+	--nav-width: var(--header-height);
+	--nav-maxWidth: 250px;
+} body {
 	padding: 0;
 }
 
@@ -27,9 +30,7 @@ body {
 		border-radius: 1em;
 		padding: .25em;
 		height: auto;
-	}
-
-	li:first-child {
+	} li:first-child {
 		display: none;
 	}
 }
